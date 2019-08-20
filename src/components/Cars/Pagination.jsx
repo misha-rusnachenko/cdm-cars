@@ -12,10 +12,8 @@ export const Pagination = ({ cardsPerPage, totalCards, paginate }) => {
         <nav>
             <ul className="pagination">
                 {pageNumbers.map(number => (
-                    <li key={number}>
-                        <div onClick={() => paginate(number)}>
-                            {number}
-                        </div>
+                    <li key={number} onClick={() => paginate(number)}>
+                        {number}
                     </li>
                 ))}
             </ul>
